@@ -5,7 +5,7 @@
 > - 컴포넌트를 사용 할 때, < > 괄호 안에 **propsName="value"**
 > - **this.props.children**은 기본적으로 갖고있는 props로서, **<Cpnt>**여기에 있는 값이 들어간다.**</Cpnt>**
 
-![1](C:\Users\Juhyang\Desktop\1.PNG)
+![ㄴprops](C:\Users\Juhyang\til\img\props.PNG)
 
 - 기본 값 설정 `Component.defaultProps ={...}`
 - Type 검증 `Component.propTypes={...}`
