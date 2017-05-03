@@ -1,10 +1,10 @@
 # 유효범휘
 
 ````
-function a (){
-    i = 0;
+function a(){
+    var i = 0;
 }
-for(i = 0; i < 5; i++){
+for(var i = 0; i < 5; i++){
     a();
     document.write(i);
 ````
@@ -19,8 +19,8 @@ for(i = 0; i < 5; i++){
 
 ````
 (function(){
-    var MYAPP = {}
-    MYAPP.calculator = {
+    var MYAPP = {} //funtion의 지역변수가 됨
+    MYAPP.calculator = { // == MYAPP['caluclator']key값에
         'left' : null,
         'right' : null
     }
@@ -35,7 +35,6 @@ for(i = 0; i < 5; i++){
     }
     document.write(sum());
 }())
-
 ````
 
 
@@ -71,4 +70,7 @@ a();
 i 읽을 때 b()안에서 지역변수를 찾게 됨. -> 없다? 바깥의 **전역변수** `var i = 5`가 사용 됨 
 
 => 사용될 때 가 아니라 __정의될 때__ 사용됨 
+
+- b()가 누구에게 사용될지 알 수 없을 때 사용되는 대상에 따라서 그 대상의 변수에 접근할 수 있다면, <u>동적 유효범위</u>
+- 지금처럼 (정의되는 시점의)전역변수에 접근한다면 <u>정적 유효범위</u>
 
