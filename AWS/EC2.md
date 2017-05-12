@@ -76,4 +76,33 @@
 - 스팟 인스턴스
   - 필요할 때 끄고 킬 수 있다 -> 엄청난 컴퓨터들을 아마존이 보유하고 있다. -> <u>노는 컴퓨터</u>가 있다.
     - 노는 컴퓨터가 많으면 아주 저렴하게 인스터스를 사용할 수도 있음. 
+
     - 인스턴스 가격이 주가처럼 가변적인 성격을 가짐
+
+      ​
+
+## AWS를 제어하는 방법들
+
+#### Management console
+
+- AWS홈페이지 들어가서 제어 => GUI방식
+  - **장점** : 익숙하다! 이해하기쉽다!
+
+1. CLI (Command Line Interface)
+   - e.g. `aws ec2 describe-instances` => GUI에서 Instance 목록 보는것과 똑같음.
+   - 비유하자면) 자동차 네비게이션 터치터치터치 vs "성수동에 데려가줘(Command)"
+   - `aws ec2 describe-instances|grep PublicIp`
+     - ![grep](./img/grep.PNG)
+   - **장점**: 자동화할 수 있다.
+2. SDK(Softwear Development Kit)
+   - php, python, c, java .. 등 언어의 역할 
+     - 컴퓨터가 제공하는 기본적인 명령(파일 입축력, 데이터 전송 등)에서 반복적, 기계적으로 실행하는 어떠한 명령이있다면 컴퓨터 프로그래밍 언어를 통해 명령어들이 실행되는 순서를 언어의 문법에 따라서 정의한 후에 거기다 이름을 붙이면 프로그램, 또는 어플리케이션을 만든 것.
+   - 컴퓨터 프로그래밍 언어를 통해 AWS를 제어할 수 있게 하는 도구
+     - 각각의 언어별로 다른 버전의 명령어 SET을 제공
+3. API(Application Programming interface)
+   - sdk랑 구분이 잘 되진 않음.
+   - restful API 웹을 통해 AWS의 인프라를 제어하는 수단
+     - e.g. http://ec2.amazonaws.com/?Action=DescribeInstance
+       - => 가지고 있는 정보를 xml로 출력해줌
+     - aws에서 사용자에게 제공하는 가장 기초적이고 원시적인 방식 -> 가장 자유도가 높은 공통의 방식
+     - 이 api를 이용하는 각각의 언어버전을 제공 -> SDK, CLI, GUI
