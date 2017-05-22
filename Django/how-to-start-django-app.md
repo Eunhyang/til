@@ -1,15 +1,15 @@
 # Django app만들기
 
 1.  vertualenv 설정
-2. project 생성
-3. app생성
-4. 빅 픽처 그리기 - veiws.py 기준
-5. 데이터베이스(DB)설정
+2.  project 생성
+3.  app생성
+4.  빅 픽처 그리기 - veiws.py 기준
+5.  데이터베이스(DB)설정
    1. ERD그리기
    2. models.py에 model 설계
    3. migrate
-6. 가짜 view정의 (url - view) : view 목적 설정 (HttpResponse)
-7. 진짜 view 정의 (view-models-templates)
+6.  가짜 view정의 (url - view) : view 목적 설정 (HttpResponse)
+7.  진짜 view 정의 (view-models-templates)
 
 
 
@@ -60,9 +60,9 @@ pip install django 가상환경 내부에 장고 설치
 > Django DRY(Do not Repeat Yourself) Principle”
 >
 > - app은 잘 만들어 놓으면 다른 프로젝트에 여러 번 사용 가능 
-> -  ex) 투표 기능 app, 로그인 기능 app, 게시판 기능 app 등.
+> - ex) 투표 기능 app, 로그인 기능 app, 게시판 기능 app 등.
 
-1. ptrhon manage.py startapp {{app명}}
+1. python manage.py startapp {{app명}}
 2. polls app에 urls.py추가
 3. templates폴더 만들고 base.html 복사
 4. static 폴더 복사

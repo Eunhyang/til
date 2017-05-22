@@ -18,3 +18,4 @@ pip란?
 4. 패키지 업데이트 `pip install --upgrade 패키지`
 5. 설치된 패키지 확인 `pip show 패키지`
 6. 설치된 전체 패키지 확인 `pip list`
+7. requirements.txt 설치 `pip install -r requirements.txt`
