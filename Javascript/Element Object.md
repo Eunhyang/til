@@ -14,6 +14,7 @@
 
 - 엘리먼트를 제어하기 위해서는 엘리먼트를 **조회하기 위한 식별자**가 필요
 - HTML 식별자
+  ​
   - 엘리먼트의 이름
   - id
   - class
@@ -38,7 +39,7 @@ active.id = 'deactive';
 console.log(active.id);
 ```
 
-=> class
+=> className
 
 ```javascript
 var active = document.getElementById('active');
@@ -47,5 +48,15 @@ active.className = "important current";
 console.log(active.className);
 //클래스를 추가할 때는 아래와 같이 문자열을 더함
 active.classNmae += "readed";
+```
+
+=> classList(className에 비해 훨씬 편리한 사용성)
+
+```javascript
+function loop(){
+  for(var i=0; i<active.classList.length; i++){
+    console.log(i, active.classList[i]);
+  }
+}
 ```
 
