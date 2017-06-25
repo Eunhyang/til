@@ -5,7 +5,7 @@
 e.g.
 
 ```javascript
-$("#record-Modal input:checkbox[name='feeling']").each(function(index, item){
+$("input:checkbox[name='feeling']").each(function(index, item){
   	this.checked = true;
 });
 ```
