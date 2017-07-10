@@ -36,11 +36,33 @@ html 엘리먼트 두 가지 구분
   - 절대 위치가 지정
 
 
+#### Display
 
+- table 속성
 
+  - table:
+
+    table-caption: 테이블 캡션으로 표시됨
+
+    table-cell: 테이블의 셀 영역을 표시
+
+    table-column: 테이블의 열 영역을 표시
+
+    table-column-group: 테이블의 열 그룹 영역 표시
+
+    table-row: 테이블의 행 영역을 표시
+
+    table-row-group: 테이블의 행 그룹 영역 표시
+
+    table-header-group: 테이블의 머리글 행 그룹 표시
+
+    table-footer-group: 테이블의 바닥글 행 그룹 표시
 
 ---
 
 tip?!
 
 - 전통적인 잘못된 방법중 하나는 Table Layout을 이용하는 것 
+- <a> <button> <input> 용도에 맞게 사용하기
+  - <a>태그를 사용하며 href의 값으로 아무 의미없는 "#"을 사용하여 onclick과 같은 방식을 쓰는 것은 <a>...</a>요소를 본래의 의미(자원의 참조)와 다르게 사용했다는 것을 반증.
+  - 다른 자원을 참조하는 의미 없는 버튼이나 텍스트가 키보드 포커스를 받아야 한다면 <button>을 사용하자
