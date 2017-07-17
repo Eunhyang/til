@@ -68,4 +68,33 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
     }
     ```
 
-    ​
+
+
+5. 프론트 개발 시 tip
+   - CSS
+     - **<u>css 공부</u>**할 때는 다른 사이트 어떻게 적용(Chrome 개발자도구 이용해서)했는지 찾아보면서 공부하면 좋다
+     - 요소내에 style속성 넣어서 적용하는 것(`<li style=""></li>`)보단 id속성에라도 <u>**css파일**에 넣어서 적용하는 것이 좋다</u>.
+     - class 나 id 명은 '**기능-역할**' 이런식으로 예를들면) `tag-btn`
+     - **<u>position 은 항상 지정</u>**해두는 편이 좋다. `position:relative`를 선호하신다. 
+     - 나중에 유지보수를 염두에두고 코딩하는 편이 좋다
+       - 코드도 잘 정리해두고, 주석도 좀 열심히..
+     - em, px 등등 중 필요에 따라 사용하지만 굳이 이유가 없다면 px을 선호
+     - **<u>CSS 우선순위</u>** -> id로 지정하는것이 제일 높고 `>` (e.g. `.menu > li`)등으로 특정 자식 엘리먼트를 지정하는 것이 빠름
+       - 커스텀할 때는 `!important`써도 무방하고 안전
+     - 유용한 사이트
+       - 크로싱 브라우저 http://caniuse.com/
+       - [**jQuery** Quick API Reference3.03.0](https://oscarotero.com/jquery/)
+       - [그리드 짤 때 : Foundation Framework](http://foundation.zurb.com/)
+   - javascript
+     - **<u>바닐라(생 Javascript) 위주로 코딩</u>**하는 편이 좋다.
+       - 프레임워크는 유행타니까 
+       - 또 jQuery는 하나하나 요소를 검색해서 가져오므로 바닐라가 더 빠름
+       - => script에서 최대한 html파일에 접근하지 않도록 짜는 것이 중요
+     - class나 id를 어떻게 지정하느냐에 따라 javascript 짜는 방법이 달라짐
+       - class로 그룹핑을 잘하면 더욱 효율적으로 코드를 짤 수도 있음
+       - e.g. 똑같은 메소드를 적용시킬거라면 id보다 class로 한번에 모두 적용시키는게 효율적인 것 처럼
+     - **개발자 도구** 사용 팁
+       - getElementById와 같은 긴 메소드들 -> selecId등으로 자기가 임의로 지정하면 편하다.
+       - 디버깅 할 때는 
+         - 간단하게 변수 확인등 -> console.log로 출력
+         - or window.z처럼 전역변수로 담아서 개발자도구에서 확인
