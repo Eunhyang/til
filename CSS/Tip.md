@@ -98,3 +98,46 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
        - 디버깅 할 때는 
          - 간단하게 변수 확인등 -> console.log로 출력
          - or window.z처럼 전역변수로 담아서 개발자도구에서 확인
+
+6. input 태그 위에 icon 올리기
+
+   - html
+
+     ```html
+       <div class="box">
+           <span class="icon"><i class="fa fa-search"></i></span>
+           <input type="search" id="search" placeholder="Search..." />
+       </div>
+     ```
+
+   - css
+
+     ```css
+     .box {
+       position:relative;
+     }
+     .icon {
+       position:absolute;
+       z-index:1;
+     }
+     ```
+
+7. input submit 버튼을 font awesome 버튼 사용
+
+   > css: input submit의 폰트를 FontAwesome으로 지정하고 input 박스의 value에 해당 아이콘 유니코드 지정
+
+   - HTML
+
+     - ```html
+       <input type="submit" class="search" value="&#xf002;">
+       ```
+
+   - CSS
+
+     - ```CSS
+       .search{
+         font-family:FontAwesome;
+       }
+       ```
+
+       ​
