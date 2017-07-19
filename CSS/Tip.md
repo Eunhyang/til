@@ -141,3 +141,41 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
        ```
 
        ​
+
+8. CSS로 글자 자르기
+
+   - 한 줄 단위로 글자 자르기
+     - 요소의 너비를 가질 수 있게 변경
+       - `display:block` or `display:inline-block; width:200px;` 
+       - block이면 부모의 너비값 100%자동으로, inline-block은 너비값 지정
+     - 줄바꿈 없애기 `white-space:nowrap;`
+     - 넘치는 부분 감추기 `overflow:hidden`
+     - 숨기는 부분 처리:밑줄임표(...) `text-overflow:ellipsis`
+
+   - 여러 줄 단위
+
+     - 줄바꿈 다시 설정 `white-space:nomal`
+
+     - 줄 높이 필수! `line-height:1.2;`
+
+     - 요소 높이 : 줄 높이 *(보여주고 싶은 줄 수) e.g. 3줄`height:3.6em`
+
+     - 숨김 부분 처리 추가
+
+       - ```css
+         text-align:left;
+         word-wrap:break-word;
+         display:-webkit-box;
+         -webkit-line-clamp:3;
+         -webkit-box-orient:vertical;
+         ```
+
+       - `text-align:left;` 글자 정렬이 양쪽 정렬이면 말 줄임표가 숨겨질 수 잇으니 왼쪽 정렬로
+
+       - `word-wrap:break-word;` 잘려버릴 글자를 단어 단위로
+
+       - `display:-webkit-box;` 여백 삽입과 같이 유연한 높이 증가를 위해 플렉스 박스형태로 변환
+
+       - `-webkit-line-clamp:3;` 보여줄 줄 갯수
+
+       - `-webkit-box-orient:vertical;` flex박스의 방향 설정
