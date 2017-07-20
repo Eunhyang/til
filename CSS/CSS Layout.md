@@ -13,15 +13,29 @@ html 엘리먼트 두 가지 구분
   - 각 블록 레벨 요소는 자식 박스 및 생선된 콘텐츠를 포함하는 주요 블록 레벨 박스(principal block-level box)를 생성하며 모든 위치 지정 스킴에 관련
   - 블록 컨테이너 박스는 인라인 레벨 박스와 블록 레벨 박스를 포함할 수 잇음
   - 블록 컨테이너면서 블록 레벨 박스 -> 블록 박스
+
 - inline level element
-- inline / inline-blick 차이
-  - inline-block 
-    - width, height 적용 가능
-    - margin, padding-top, bottom 적용 가능
-    - line-height 적용 가능
-    - **!!주의!!*
-      - inline-block 끼리 공백이 생길 때 => 상위 div에 `font-size:0`을 적용
-      - inline-block 끼리 높이가 안맞을 때 상위 공백이 생김 => `vertical-align:—` top등을 맞춰주기
+
+  ​
+
+  #### display
+
+  - inline / inline-blick 차이
+    - inline-block 
+      - width, height 적용 가능
+      - margin, padding-top, bottom 적용 가능
+      - line-height 적용 가능
+      - **!!주의!!*
+        - inline-block 끼리 공백이 생길 때 => 상위 div에 `font-size:0`을 적용
+        - inline-block 끼리 높이가 안맞을 때 상위 공백이 생김 => `vertical-align:—` top등을 맞춰주기
+
+- display 와 visibility 차이
+
+  - display :  요소를 어떻게 표시할지 선택
+
+  - visibility : 요소를 보일지 말지 결정
+
+    ​
 
 
 
