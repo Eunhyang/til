@@ -179,3 +179,19 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
        - `-webkit-line-clamp:3;` 보여줄 줄 갯수
 
        - `-webkit-box-orient:vertical;` flex박스의 방향 설정
+
+9. div 안 img 가운데 정렬
+
+   - ```css
+     img {
+       position:absolute;
+       left:50%;
+       margin-left:-50px; 
+       /*이미지width의 반*/
+       top:50%;
+       margin-top:-60px;
+       /*이미지height의 반*/
+     }
+     ```
+
+     ​
