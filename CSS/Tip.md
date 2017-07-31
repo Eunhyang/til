@@ -27,6 +27,7 @@
    - **숨긴 부분 처리**
      - 숨겨진 부분을 처리하는 방식은 text-overflow 속성이 담당
      - => `text-overflow:ellipsis` 밑줄임표(...) 생성
+   - !table일 경우 table속성에: `table-layout:fixed`
 
    ```css
    .target {
@@ -56,7 +57,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
 
   - 문제: 길이를 고정값으로 주었는데 안의 p 요소안 콘텐츠가 일정 길이를 넘을 경우 정렬이 뒤틀려짐
 
-  - 해결방법 
+  - 해결방법
 
   - ```css
     .comment{
@@ -75,7 +76,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
      - **<u>css 공부</u>**할 때는 다른 사이트 어떻게 적용(Chrome 개발자도구 이용해서)했는지 찾아보면서 공부하면 좋다
      - 요소내에 style속성 넣어서 적용하는 것(`<li style=""></li>`)보단 id속성에라도 <u>**css파일**에 넣어서 적용하는 것이 좋다</u>.
      - class 나 id 명은 '**기능-역할**' 이런식으로 예를들면) `tag-btn`
-     - **<u>position 은 항상 지정</u>**해두는 편이 좋다. `position:relative`를 선호하신다. 
+     - **<u>position 은 항상 지정</u>**해두는 편이 좋다. `position:relative`를 선호하신다.
      - 나중에 유지보수를 염두에두고 코딩하는 편이 좋다
        - 코드도 잘 정리해두고, 주석도 좀 열심히..
      - em, px 등등 중 필요에 따라 사용하지만 굳이 이유가 없다면 px을 선호
@@ -87,7 +88,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
        - [그리드 짤 때 : Foundation Framework](http://foundation.zurb.com/)
    - javascript
      - **<u>바닐라(생 Javascript) 위주로 코딩</u>**하는 편이 좋다.
-       - 프레임워크는 유행타니까 
+       - 프레임워크는 유행타니까
        - 또 jQuery는 하나하나 요소를 검색해서 가져오므로 바닐라가 더 빠름
        - => script에서 최대한 html파일에 접근하지 않도록 짜는 것이 중요
      - class나 id를 어떻게 지정하느냐에 따라 javascript 짜는 방법이 달라짐
@@ -95,7 +96,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
        - e.g. 똑같은 메소드를 적용시킬거라면 id보다 class로 한번에 모두 적용시키는게 효율적인 것 처럼
      - **개발자 도구** 사용 팁
        - getElementById와 같은 긴 메소드들 -> selecId등으로 자기가 임의로 지정하면 편하다.
-       - 디버깅 할 때는 
+       - 디버깅 할 때는
          - 간단하게 변수 확인등 -> console.log로 출력
          - or window.z처럼 전역변수로 담아서 개발자도구에서 확인
 
@@ -146,7 +147,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
 
    - 한 줄 단위로 글자 자르기
      - 요소의 너비를 가질 수 있게 변경
-       - `display:block` or `display:inline-block; width:200px;` 
+       - `display:block` or `display:inline-block; width:200px;`
        - block이면 부모의 너비값 100%자동으로, inline-block은 너비값 지정
      - 줄바꿈 없애기 `white-space:nowrap;`
      - 넘치는 부분 감추기 `overflow:hidden`
@@ -186,7 +187,7 @@ height를 auto로 잡아도 이미지등이 div박스 영역을 벗어나 제대
      img {
        position:absolute;
        left:50%;
-       margin-left:-50px; 
+       margin-left:-50px;
        /*이미지width의 반*/
        top:50%;
        margin-top:-60px;
