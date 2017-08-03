@@ -4,7 +4,7 @@
 >
 > [Layer 화면 중앙정렬 방법](http://nuli.navercorp.com/sharing/blog/post/1132794)
 
-1. `position : absolute` +`margin: <마이너스값>` 
+1. `position : absolute` +`margin: <마이너스값>`
 
    > 장점 : ie7이상 브라우저 지원
    >
@@ -135,4 +135,11 @@
    }
    ```
 
-   ​
+
+   
+
+- `position:absolute` + `right:50;margin-right:-00px` 일때 
+  - position이 absolute 이기때문에 하위 엘리먼트들은 absolute 엘리먼트를 무시하고 normal-flow를 따르게됨 (엘리먼트들이 겹치는 현상 발생)
+  - => absolute를 감싸는 부모 엘리먼트가 `position:relative`여야 하며 해당 엘리먼트의 높이값과 넓이값을 가져야함
+    - absolute의 상대적위치는 static이 아닌 부모위치로 결정
+    - 하위 absolute엘리먼트의 크기값을 감싸줘야함
