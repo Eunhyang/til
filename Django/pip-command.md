@@ -19,3 +19,4 @@ pip란?
 5. 설치된 패키지 확인 `pip show 패키지`
 6. 설치된 전체 패키지 확인 `pip list`
 7. requirements.txt 설치 `pip install -r requirements.txt`
+8. 설치된 패키지 전부 삭제 `pip freeze | xargs pip uninstall -y`
