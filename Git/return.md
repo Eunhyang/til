@@ -4,4 +4,5 @@
   -  e.g. `git checkout HEAD~10` 
 - 특정 커밋 돌아가기 `git checkout 커밋고유번호`
   - e.g. `git checkout 442723a `
+- 수정 전으로 돌아가기: `git reset --hard HEAD`
 
