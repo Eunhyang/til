@@ -12,6 +12,9 @@
 - 파이썬 클래스와 데이터베이스 테이블을 매핑
   - Model 클래스 : DB 테이블과 매핑
   - -> Model Instance : DB테이블의 1 row
+- **QuerySet**?
+  - 전달받은 객체의 목록
+  - 데이터베이스로부터 데이터를 읽고 **<u>필터</u>**를 걸거나 **<u>정렬</u>**할 수 있음
 
 #### SQL(Structured Query Language)
 
