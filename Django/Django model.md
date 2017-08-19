@@ -72,7 +72,31 @@ class Ox(models.Model)
   - 예) 정렬 옵션(ordering), 데이터베이스 테이블 이름(db_table), 읽기 좋은 이름이나 복수(plural)이름을 지정할 수 있음(verbose_name, verbose_name_plural)
 
 
+#### ModelForm.save(commit=False)
 
+- Model Form 클래스는` .save(self, commit=True)` 메소드로 구현되어 있음
+
+- `commit=False` =>commit False flag(DB저장 여부 결정)를 통해 함수 호출을 지연함
+
+- e.g. f`orm.save(commit=False)`를 통해 DB 저장을 지연시켜 중복 저장을 방지
+
+- e.g.2 
+
+  ```python
+  #ecommerce-2 models.py VariationListView(ListView)
+
+  def post(self, request ,*args, **kwargs):
+  formset = VariationInventoryFormSet(request.POST, request.FILES)
+  		print(request.POST)
+  		if formset.is_valid():
+  			formset.save(commit=False) #formset의 form 중 중복 DB save 방지
+  			for form in formset:
+  				form.save()
+  				return redirect
+  		raise Http404
+  ```
+
+  ​
 
 
 참고
