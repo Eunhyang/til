@@ -30,14 +30,14 @@
   -  Gitlab 서버 설치
     - terminal 
       - `$ ssh-keygen` : ssh 비밀키+공개키 생성
-        - 생성한 공개키를 gitlab에 등록해야함![gitlab-2](/Users/brownbagcoffee/Desktop/dev/til/img/gitlab-2.png)
+        - 생성한 공개키를 gitlab에 등록해야함![gitlab-2](../img/gitlab-2.png)
           - -> 해당경로에 생성됨
           - 보안을 위한 비밀번호 생성하지 않으면 enter
-        - 키 생성 완료![gitlab-3](/Users/brownbagcoffee/Desktop/dev/til/img/gitlab-3.png)
+        - 키 생성 완료![gitlab-3](../img/gitlab-3.png)
           - `id_rsa` 비밀키 
           - `id_rsa.pub` 공개키
       - `cat id_rsa.pub`
-        - 명령어 치면 나오는 내용 copy![gitlab-4](/Users/brownbagcoffee/Desktop/dev/til/img/gitlab-4.png)
+        - 명령어 치면 나오는 내용 copy![gitlab-4](../img/gitlab-4.png)
     - gitlab : User setting의 ssh key에 등록
       - -> <u>작업 컴퓨터</u>에 ssh <u>비밀키</u>가 저장되어 있고 **+** <u>gitlab</u>에 <u>공개키</u>가 저장되어있으면 **<u>gitlab의 원격저장소에 접근할 수 있는 권한</u>**을 얻게 된 것
     - terminal
