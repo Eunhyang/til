@@ -12,7 +12,7 @@
 
   - STEP 1.  Chosse an Amazon Machin Image(AMI) : **운영체제** 선택
 
-    ![instance-launch-step1](C:\Users\Juhyang\til\img\instance-launch-step1.PNG)
+    ![instance-launch-step1](..\img\instance-launch-step1.PNG)
 
     - Linux / Window
       - window 중 sql server가 설치되어있으면 무료가 아님 <= MS의 DB가격이 높음
@@ -29,13 +29,13 @@
 
   - STEP 3. Configure Instance Details
 
-    ![instance-launch-step3](C:\Users\Juhyang\til\img\instance-launch-step3.PNG)
+    ![instance-launch-step3](..\img\instance-launch-step3.PNG)
 
     - 인스터스 개수, 스팟인스턴스, 네트워크 관련, 운영체제에서 shotdown했을 때,  실제로 인스턴스 삭제방지, 모니터링 설정
 
   - STEP4. Add Storage : EBS(Elestic) 장착
 
-    ![instance-launch-step4](C:\Users\Juhyang\til\img\instance-launch-step4.PNG)
+    ![instance-launch-step4](..\img\instance-launch-step4.PNG)
 
     - Size 30G까지 무료 / Volume Type 저장장치 형식 / IOPS 저장장치 속도 / Delete on Termination 인스턴스 삭제시 같이 저장장치 폐기할것인가(내장하드or외장하드)
 
